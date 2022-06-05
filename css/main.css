@@ -1,0 +1,16 @@
+/* font-family: 'Playfair Display', serif;
+font-family: "Gilroy";
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Gillroy";
+  background-image: url("./../img/bg.jpg");
+  background-color: #0B1D26;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
