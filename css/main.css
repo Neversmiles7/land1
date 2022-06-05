@@ -10,7 +10,72 @@ body {
   margin: 0;
   font-family: "Gillroy";
   background-image: url("./../img/bg.jpg");
-  background-color: #0B1D26;
+  background-color: #0b1d26;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+/* header */
+.header {
+  padding-top: 64px;
+}
+
+.container-wide {
+  width: 1790px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 1.12;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  list-style-type: none;
+}
+
+.nav li + li {
+  margin-left: 40px;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.account {
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.nav a:hover {
+  color: #fbd784;
+  transition: color 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.account:hover {
+  color: #fbd784;
+  transition: color 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
