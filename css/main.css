@@ -17,6 +17,7 @@ body {
 /* header */
 .header {
   padding-top: 64px;
+  padding-bottom: 843px;
 }
 .nav-wrapper {
   margin-bottom: 198px;
@@ -36,6 +37,7 @@ body {
 
 .space-between {
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -92,11 +94,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-decoration: none;
-  transition: transform 250ms cubic-bezier(1.000, 0.295, 0.360, 1.650);
+  transition: transform 250ms cubic-bezier(1, 0.295, 0.36, 1.65);
 }
 .hero:hover {
-    transform: translateY(-7%);
-    transition: transform 250ms cubic-bezier(1.000, 0.295, 0.360, 1.650);
+  transform: translateY(-7%);
+  transition: transform 250ms cubic-bezier(1, 0.295, 0.36, 1.65);
 }
 .hero-cat {
   position: relative;
@@ -151,4 +153,119 @@ body {
   right: 0;
   top: 0;
   background-image: url("./../svg/arrow-down.svg");
+}
+
+/* MAIN */
+
+.container {
+  max-width: 1462px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.article-text {
+  position: relative;
+  padding-left: 150px;
+  max-width: 782px;
+}
+
+.article-text::before {
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
+    transform: translateY(50%);
+  display: block;
+  content: attr(data-number);
+  width: 240px;
+  height: 240px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 240px;
+  line-height: 1;
+  /* identical to box height, or 100% */
+
+  color: #ffffff;
+
+  opacity: 0.1;
+}
+
+.sub-title {
+  position: relative;
+  margin-bottom: 27px;
+  font-weight: 800;
+  padding-left: 96px;
+
+  font-size: 18px;
+  line-height: 1.222;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fbd784;
+}
+
+.sub-title::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: #fbd784;
+}
+
+.article-title {
+  max-width: 555px;
+  margin-bottom: 27px;
+
+  font-family: "Playfair Display", serif;
+
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.2;
+
+  color: #ffffff;
+}
+
+.article-text p {
+  margin-bottom: 27px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.777;
+  /* or 178% */
+
+  color: #ffffff;
+}
+
+.article-read-more {
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 18px;
+  line-height: 1.222;
+  /* identical to box height */
+
+  /* Accent */
+
+  color: #fbd784;
+}
+.article-read-more::after {
+  content: "";
+  display: block;
+  margin-left: 16px;
+  width: 24px;
+  height: 16px;
+  background-image: url(./../svg/arrow-up.svg);
+}
+
+.article-img {
 }
