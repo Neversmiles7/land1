@@ -157,6 +157,7 @@ body {
 
 /* MAIN */
 
+
 .container {
   max-width: 1462px;
   margin-left: auto;
@@ -166,10 +167,16 @@ body {
 }
 
 .article {
+  margin-bottom: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.article:nth-child(2n) {
+   flex-direction: row-reverse;
+}
+
 .article-text {
   position: relative;
   padding-left: 150px;
@@ -177,10 +184,10 @@ body {
 }
 
 .article-text::before {
-    position: absolute;
-    bottom: 100%;
-    left: 0%;
-    transform: translateY(50%);
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+  transform: translateY(50%);
   display: block;
   content: attr(data-number);
   width: 240px;
